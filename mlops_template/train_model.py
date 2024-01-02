@@ -4,18 +4,23 @@ from models.model import SimpleCNN
 from torch import optim
 import matplotlib.pyplot as plt 
 import os 
+import hydra
+import logging
 
-import click 
-@click.group()
-def cli():
-    """Command line interface."""
-    pass
+log = logging.getLogger(__name__)
 
 
-@click.command()
-@click.option("--lr", default=0.03, help="learning rate to use for training")
-@click.option("--training_name", help="name of the training for generating subfolders")
-def train(lr, training_name) : 
+@hydra.main(config_name = "config_train.yaml")
+def train(config) : 
+
+    # Get the original working directory
+    original_wd = hydra.utils.get_original_cwd()
+
+    # Change back to the original working directory
+    os.chdir(original_wd)
+
+    lr = float(config["learning_rate"])
+    training_name = config["training_name"]
 
     # Instantiate the model
     model = SimpleCNN()
@@ -23,6 +28,7 @@ def train(lr, training_name) :
     # Define loss function and optimizer
     criterion = torch.nn.CrossEntropyLoss()
     optimizer = optim.SGD(model.parameters(), lr=lr)
+    log.info("THE CURRENT DIRECTORY IS " + os.getcwd())
     data = torch.load("data/processed/processed_tensor.pt")
     train_loader = data["train_loader"]
     # Training loop
@@ -43,7 +49,7 @@ def train(lr, training_name) :
 
         average_loss = running_loss / len(train_loader)
         loss_list.append(average_loss)
-        print(f'Epoch {epoch + 1}/{num_epochs}, Loss: {average_loss:.4f}')
+        log.info(f'Epoch {epoch + 1}/{num_epochs}, Loss: {average_loss:.4f}')
     plt.plot(loss_list)
     if os.path.isdir("reports/figures/{}".format(training_name)) == False :
         os.system("mkdir reports/figures/{}".format(training_name))
@@ -53,7 +59,7 @@ def train(lr, training_name) :
     torch.save(model.state_dict(), 'models/{}/checkpoint.pth'.format(training_name))
 
 
-cli.add_command(train)
+
 
 if __name__ == "__main__":
-    cli()
+    train()

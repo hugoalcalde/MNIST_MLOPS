@@ -1,0 +1,6 @@
+[2024-01-02 19:27:21,705][__main__][INFO] - THE CURRENT DIRECTORY IS /Users/cerebriuhugo/Documents/DTU/MLOps/S2/MNIST_MLOPS
+[2024-01-02 19:27:32,439][__main__][INFO] - Epoch 1/5, Loss: 1.7755
+[2024-01-02 19:27:43,723][__main__][INFO] - Epoch 2/5, Loss: 0.5333
+[2024-01-02 19:27:54,829][__main__][INFO] - Epoch 3/5, Loss: 0.2915
+[2024-01-02 19:28:05,457][__main__][INFO] - Epoch 4/5, Loss: 0.2146
+[2024-01-02 19:28:16,080][__main__][INFO] - Epoch 5/5, Loss: 0.1754
