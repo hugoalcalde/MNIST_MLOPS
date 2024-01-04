@@ -1,0 +1,22 @@
+
+Epoch 0:  54%|█████████████████████████████████▊                             | 189/352 [00:01<00:01, 111.66it/s, v_num=m0bp]
+  | Name      | Type             | Params
+-----------------------------------------------
+0 | conv1     | Conv2d           | 320
+1 | conv2     | Conv2d           | 18.5 K
+2 | pool      | MaxPool2d        | 0
+3 | fc1       | Linear           | 401 K
+4 | fc2       | Linear           | 1.3 K
+5 | criterium | CrossEntropyLoss | 0
+-----------------------------------------------
+421 K     Trainable params
+0         Non-trainable params
+421 K     Total params
+1.687     Total estimated model params size (MB)
+/opt/homebrew/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+Epoch 0: 100%|███████████████████████████████████████████████████████████████| 352/352 [00:03<00:00, 100.11it/s, v_num=m0bp]
+
+
+Validation DataLoader 0:  21%|███████████▉                                             | 1574/7500 [00:04<00:16, 352.62it/s]
+
+Validation DataLoader 0:  26%|██████████████▊                                          | 1941/7500 [00:05<00:15, 352.13it/s]

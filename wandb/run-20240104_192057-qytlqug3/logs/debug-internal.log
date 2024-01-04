@@ -1,0 +1,182 @@
+2024-01-04 19:20:57,204 INFO    StreamThr :37090 [internal.py:wandb_internal():86] W&B internal server running at pid: 37090, started at: 2024-01-04 19:20:57.203397
+2024-01-04 19:20:57,205 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: status
+2024-01-04 19:20:57,209 INFO    WriterThread:37090 [datastore.py:open_for_write():85] open: ./wandb/run-20240104_192057-qytlqug3/run-qytlqug3.wandb
+2024-01-04 19:20:57,209 DEBUG   SenderThread:37090 [sender.py:send():382] send: header
+2024-01-04 19:20:57,224 DEBUG   SenderThread:37090 [sender.py:send():382] send: run
+2024-01-04 19:20:57,226 INFO    SenderThread:37090 [sender.py:_maybe_setup_resume():763] checking resume status for None/dtu_mlops/qytlqug3
+2024-01-04 19:20:58,246 INFO    SenderThread:37090 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240104_192057-qytlqug3/files
+2024-01-04 19:20:58,246 INFO    SenderThread:37090 [sender.py:_start_run_threads():1136] run started: qytlqug3 with start time 1704392457.204899
+2024-01-04 19:20:58,256 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: check_version
+2024-01-04 19:20:58,256 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: check_version
+2024-01-04 19:20:59,563 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: run_start
+2024-01-04 19:20:59,573 DEBUG   HandlerThread:37090 [system_info.py:__init__():32] System info init
+2024-01-04 19:20:59,573 DEBUG   HandlerThread:37090 [system_info.py:__init__():47] System info init done
+2024-01-04 19:20:59,573 INFO    HandlerThread:37090 [system_monitor.py:start():194] Starting system monitor
+2024-01-04 19:20:59,573 INFO    SystemMonitor:37090 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-04 19:20:59,573 INFO    HandlerThread:37090 [system_monitor.py:probe():214] Collecting system info
+2024-01-04 19:20:59,574 INFO    SystemMonitor:37090 [interfaces.py:start():190] Started cpu monitoring
+2024-01-04 19:20:59,574 INFO    SystemMonitor:37090 [interfaces.py:start():190] Started disk monitoring
+2024-01-04 19:20:59,576 DEBUG   HandlerThread:37090 [system_info.py:probe():196] Probing system
+2024-01-04 19:20:59,578 INFO    SystemMonitor:37090 [interfaces.py:start():190] Started gpuapple monitoring
+2024-01-04 19:20:59,581 INFO    SystemMonitor:37090 [interfaces.py:start():190] Started memory monitoring
+2024-01-04 19:20:59,582 INFO    SystemMonitor:37090 [interfaces.py:start():190] Started network monitoring
+2024-01-04 19:20:59,586 DEBUG   HandlerThread:37090 [system_info.py:_probe_git():181] Probing git
+2024-01-04 19:20:59,602 DEBUG   HandlerThread:37090 [system_info.py:_probe_git():189] Probing git done
+2024-01-04 19:20:59,603 DEBUG   HandlerThread:37090 [system_info.py:probe():244] Probing system done
+2024-01-04 19:20:59,603 DEBUG   HandlerThread:37090 [system_monitor.py:probe():223] {'os': 'macOS-13.2.1-arm64-arm-64bit', 'python': '3.11.6', 'heartbeatAt': '2024-01-04T18:20:59.579207', 'startedAt': '2024-01-04T18:20:57.195700', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/cerebriuhugo/Documents/DTU/MLOps/S2/MNIST_MLOPS/mlops_template/train_model_lightning.py', 'codePathLocal': 'mlops_template/train_model_lightning.py', 'codePath': 'mlops_template/train_model_lightning.py', 'git': {'remote': 'https://github.com/hugoalcalde/MNIST_MLOPS.git', 'commit': 'ca7c0d4dcfbf896b40afd2334c0ca59ca32b7127'}, 'email': 'hugoalcaldebenito@gmail.com', 'root': '/Users/cerebriuhugo/Documents/DTU/MLOps/S2/MNIST_MLOPS', 'host': 'MacBook-Air-8.local', 'username': 'cerebriuhugo', 'executable': '/opt/homebrew/opt/python@3.11/bin/python3.11', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 8.32876205444336}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 8.0}}
+2024-01-04 19:20:59,603 INFO    HandlerThread:37090 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-04 19:20:59,603 INFO    HandlerThread:37090 [system_monitor.py:probe():227] Publishing system info
+2024-01-04 19:20:59,603 DEBUG   HandlerThread:37090 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-04 19:20:59,603 DEBUG   HandlerThread:37090 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-04 19:20:59,604 INFO    HandlerThread:37090 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-04 19:20:59,610 DEBUG   SenderThread:37090 [sender.py:send():382] send: files
+2024-01-04 19:20:59,610 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-01-04 19:20:59,614 DEBUG   SenderThread:37090 [sender.py:send():382] send: telemetry
+2024-01-04 19:20:59,614 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-04 19:20:59,614 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-04 19:20:59,614 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: stop_status
+2024-01-04 19:21:00,252 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240104_192057-qytlqug3/files/requirements.txt
+2024-01-04 19:21:00,253 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240104_192057-qytlqug3/files/wandb-metadata.json
+2024-01-04 19:21:00,350 DEBUG   SenderThread:37090 [sender.py:send():382] send: metric
+2024-01-04 19:21:00,350 DEBUG   SenderThread:37090 [sender.py:send():382] send: telemetry
+2024-01-04 19:21:00,350 DEBUG   SenderThread:37090 [sender.py:send():382] send: metric
+2024-01-04 19:21:00,350 WARNING SenderThread:37090 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2024-01-04 19:21:00,412 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:00,412 DEBUG   SenderThread:37090 [sender.py:send():382] send: metric
+2024-01-04 19:21:00,412 DEBUG   SenderThread:37090 [sender.py:send():382] send: metric
+2024-01-04 19:21:00,412 DEBUG   SenderThread:37090 [sender.py:send():382] send: metric
+2024-01-04 19:21:00,412 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:00,412 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:00,413 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:00,797 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:00,797 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:00,797 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:00,797 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:01,112 INFO    wandb-upload_0:37090 [upload_job.py:push():131] Uploaded file /var/folders/wf/sfgxm5r1333cm4m0z0j4n5980000gp/T/tmpze5m6erswandb/hp5nasyi-wandb-metadata.json
+2024-01-04 19:21:01,201 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:01,202 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:01,202 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:01,202 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:01,253 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:01,253 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json
+2024-01-04 19:21:01,574 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:01,575 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:01,575 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:01,575 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:01,963 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:01,963 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:01,963 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:01,964 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:02,212 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: status_report
+2024-01-04 19:21:02,255 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json
+2024-01-04 19:21:02,404 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:02,404 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:02,404 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:02,404 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:02,783 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-04 19:21:02,784 DEBUG   SenderThread:37090 [sender.py:send():382] send: history
+2024-01-04 19:21:02,784 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: summary_record
+2024-01-04 19:21:02,784 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:03,257 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:03,257 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json
+2024-01-04 19:21:05,261 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:07,212 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: status_report
+2024-01-04 19:21:07,271 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:09,279 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:09,913 DEBUG   SenderThread:37090 [sender.py:send():382] send: exit
+2024-01-04 19:21:09,913 INFO    SenderThread:37090 [sender.py:send_exit():589] handling exit code: 0
+2024-01-04 19:21:09,913 INFO    SenderThread:37090 [sender.py:send_exit():591] handling runtime: 10
+2024-01-04 19:21:09,913 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:09,914 INFO    SenderThread:37090 [sender.py:send_exit():597] send defer
+2024-01-04 19:21:09,914 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-04 19:21:09,914 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,914 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-04 19:21:09,914 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 1
+2024-01-04 19:21:09,914 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-04 19:21:09,914 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,914 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-04 19:21:09,914 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 2
+2024-01-04 19:21:09,914 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-04 19:21:09,914 DEBUG   SystemMonitor:37090 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-04 19:21:09,914 DEBUG   SystemMonitor:37090 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-04 19:21:09,914 DEBUG   SystemMonitor:37090 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-04 19:21:09,914 INFO    HandlerThread:37090 [interfaces.py:finish():202] Joined disk monitor
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [interfaces.py:finish():202] Joined memory monitor
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [interfaces.py:finish():202] Joined network monitor
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 3
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send():382] send: telemetry
+2024-01-04 19:21:09,915 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send():382] send: stats
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 4
+2024-01-04 19:21:09,915 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-04 19:21:09,915 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 5
+2024-01-04 19:21:09,915 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,915 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-04 19:21:09,915 DEBUG   SenderThread:37090 [sender.py:send():382] send: summary
+2024-01-04 19:21:09,916 INFO    SenderThread:37090 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-04 19:21:09,916 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,916 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-04 19:21:09,916 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 6
+2024-01-04 19:21:09,916 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:09,916 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-04 19:21:09,916 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:09,916 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-04 19:21:09,917 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: status_report
+2024-01-04 19:21:10,150 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 7
+2024-01-04 19:21:10,150 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:10,150 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-04 19:21:10,150 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:10,150 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-04 19:21:10,279 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/config.yaml
+2024-01-04 19:21:10,280 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json
+2024-01-04 19:21:10,919 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-04 19:21:11,285 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:12,684 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 8
+2024-01-04 19:21:12,684 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: poll_exit
+2024-01-04 19:21:12,685 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:12,685 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-04 19:21:12,685 DEBUG   SenderThread:37090 [sender.py:send_request():409] send_request: defer
+2024-01-04 19:21:12,685 INFO    SenderThread:37090 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-04 19:21:12,685 INFO    SenderThread:37090 [job_builder.py:build():298] Attempting to build job artifact
+2024-01-04 19:21:12,685 INFO    SenderThread:37090 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-01-04 19:21:12,717 INFO    SenderThread:37090 [job_builder.py:build():404] adding wandb-job metadata file
+2024-01-04 19:21:12,719 INFO    SenderThread:37090 [sender.py:transition_state():617] send defer: 9
+2024-01-04 19:21:12,719 DEBUG   HandlerThread:37090 [handler.py:handle_request():146] handle_request: defer
+2024-01-04 19:21:12,719 INFO    HandlerThread:37090 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-04 19:21:12,719 DEBUG   SenderThread:37090 [sender.py:send():382] send: artifact
+2024-01-04 19:21:13,297 INFO    Thread-12 :37090 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:14,252 WARNING StreamThr :37090 [internal.py:is_dead():414] Internal process exiting, parent pid 37076 disappeared
+2024-01-04 19:21:14,253 ERROR   StreamThr :37090 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-01-04 19:21:14,320 INFO    SenderThread:37090 [sender.py:send_artifact():1470] sent artifact job-https___github.com_hugoalcalde_MNIST_MLOPS.git_mlops_template_train_model_lightning.py - {'id': 'QXJ0aWZhY3Q6NjgxNzk0OTkx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyNzQ3NjIwNA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NjgxODA5NzQy', 'versionIndex': 2}}}
+2024-01-04 19:21:14,320 INFO    SenderThread:37090 [sender.py:finish():1548] shutting down sender
+2024-01-04 19:21:14,320 INFO    SenderThread:37090 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-04 19:21:14,726 INFO    WriterThread:37090 [datastore.py:close():294] close: ./wandb/run-20240104_192057-qytlqug3/run-qytlqug3.wandb
+2024-01-04 19:21:14,726 INFO    HandlerThread:37090 [handler.py:finish():866] shutting down handler
+2024-01-04 19:21:15,308 INFO    SenderThread:37090 [dir_watcher.py:finish():388] scan: ./wandb/run-20240104_192057-qytlqug3/files
+2024-01-04 19:21:15,309 INFO    SenderThread:37090 [dir_watcher.py:finish():402] scan save: ./wandb/run-20240104_192057-qytlqug3/files/requirements.txt requirements.txt
+2024-01-04 19:21:15,309 INFO    SenderThread:37090 [dir_watcher.py:finish():402] scan save: ./wandb/run-20240104_192057-qytlqug3/files/output.log output.log
+2024-01-04 19:21:15,314 INFO    SenderThread:37090 [dir_watcher.py:finish():402] scan save: ./wandb/run-20240104_192057-qytlqug3/files/config.yaml config.yaml
+2024-01-04 19:21:15,316 INFO    SenderThread:37090 [dir_watcher.py:finish():402] scan save: ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json wandb-summary.json
+2024-01-04 19:21:15,318 INFO    SenderThread:37090 [dir_watcher.py:finish():402] scan save: ./wandb/run-20240104_192057-qytlqug3/files/wandb-metadata.json wandb-metadata.json
+2024-01-04 19:21:15,320 INFO    SenderThread:37090 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-04 19:21:15,320 INFO    SenderThread:37090 [file_pusher.py:join():181] waiting for file pusher
+2024-01-04 19:21:16,113 INFO    wandb-upload_0:37090 [upload_job.py:push():131] Uploaded file ./wandb/run-20240104_192057-qytlqug3/files/requirements.txt
+2024-01-04 19:21:16,729 INFO    wandb-upload_2:37090 [upload_job.py:push():131] Uploaded file ./wandb/run-20240104_192057-qytlqug3/files/config.yaml
+2024-01-04 19:21:17,325 INFO    wandb-upload_3:37090 [upload_job.py:push():131] Uploaded file ./wandb/run-20240104_192057-qytlqug3/files/wandb-summary.json
+2024-01-04 19:21:18,554 INFO    wandb-upload_1:37090 [upload_job.py:push():131] Uploaded file ./wandb/run-20240104_192057-qytlqug3/files/output.log
+2024-01-04 19:21:18,844 INFO    SenderThread:37090 [file_stream.py:finish():595] file stream finish called
+2024-01-04 19:21:19,022 INFO    SenderThread:37090 [file_stream.py:finish():599] file stream finish is done

@@ -1,0 +1,19 @@
+  | Name      | Type             | Params
+-----------------------------------------------
+0 | conv1     | Conv2d           | 320
+1 | conv2     | Conv2d           | 18.5 K
+2 | pool      | MaxPool2d        | 0
+3 | fc1       | Linear           | 401 K
+4 | fc2       | Linear           | 1.3 K
+5 | criterium | CrossEntropyLoss | 0
+-----------------------------------------------
+421 K     Trainable params
+0         Non-trainable params
+421 K     Total params
+1.687     Total estimated model params size (MB)
+/opt/homebrew/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:492: Your `val_dataloader`'s sampler has shuffling enabled, it is strongly recommended that you turn shuffling off for val/test dataloaders.
+/opt/homebrew/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'val_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+/opt/homebrew/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:441: The 'train_dataloader' does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` to `num_workers=7` in the `DataLoader` to improve performance.
+Epoch 2:  39%|█████████████████████████                                        | 27/70 [00:00<00:00, 130.43it/s, v_num=f5ff]
+
+Epoch 4: 100%|█████████████████████████████████████████████████████████████████| 70/70 [00:00<00:00, 106.24it/s, v_num=f5ff]
