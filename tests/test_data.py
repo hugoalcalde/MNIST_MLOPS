@@ -1,10 +1,8 @@
 from tests import _PATH_DATA
-import torch 
-import pytest 
+import torch
 
 
-def test_sets_dimmensions() : 
-
+def test_sets_dimmensions():
     processed_tensor = torch.load(_PATH_DATA + "processed_tensor.pt")
 
     train_dataloader = len(processed_tensor["train_loader"].dataset)
@@ -17,4 +15,3 @@ def test_sets_dimmensions() :
 
     assert train_dataloader > val_dataloader, "Validation set is bigger than train set"
     assert train_dataloader + test_dataloader + val_dataloader == N, "There was some data leak in the processing"
-
