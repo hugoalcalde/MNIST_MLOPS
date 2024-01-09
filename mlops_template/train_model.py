@@ -40,7 +40,7 @@ def train(config) :
 
         for inputs, labels in train_loader :
             optimizer.zero_grad()  # Zero the gradients
-            outputs = model(inputs)  # Forward pass
+            outputs = model(inputs)  # Forward pass 
             loss = criterion(outputs, labels)  # Compute the loss
             loss.backward()  # Backward pass
             optimizer.step()  # Update the weights
