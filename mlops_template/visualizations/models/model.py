@@ -11,8 +11,8 @@ class SimpleCNN(nn.Module):
         # Max pooling layer
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0)
         # Fully connected layers
-        self.fc1 = nn.Linear(64 * 7 * 7, 128)  
-        self.fc2 = nn.Linear(128, 10)  
+        self.fc1 = nn.Linear(64 * 7 * 7, 128)
+        self.fc2 = nn.Linear(128, 10)
 
     def forward(self, x):
         # Apply convolutional and pooling layers
@@ -21,11 +21,10 @@ class SimpleCNN(nn.Module):
         x = F.relu(self.conv2(x))
         x = self.pool(x)
         # Flatten the input before the fully connected layers
-        x = x.view(-1, 64 * 7 * 7) 
+        x = x.view(-1, 64 * 7 * 7)
         x = F.relu(self.fc1(x))
         x = self.fc2(x)
         return x
-    
 
 
 class PartialModel(nn.Module):

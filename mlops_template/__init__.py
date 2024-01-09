@@ -1,2 +1,0 @@
-from mlops_template.models.model import MyNeuralNet
-from mlops_template.predict_model import predict
